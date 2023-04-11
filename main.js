@@ -169,7 +169,7 @@ async function loadModel() {
 
   navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then((stream) => {
-      const videoElement = document.getElementById('webcamVideo');
+      const videoElement = document.getElementById('remoteVideo');
       videoElement.srcObject = stream;
       videoElement.play();
 
@@ -196,6 +196,8 @@ async function loadModel() {
         const labelIndex = tf.argMax(output, 1).dataSync()[0];
         const label = metadata.labels[labelIndex];
         console.log(label);
+
+        let translatedText = document.getElementById('translatedText').innerHTML = label;
 
         // Cleanup
         tensor.dispose();

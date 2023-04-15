@@ -5,21 +5,118 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #2c3e50; */
   margin: 80px 10px;
+  background-color: #f2f2f2;
+  color: #444444;
 }
 
-video {
-  width: 40vw;
-  /* width: 265; */
-  height: 30vw;
-  /* height: 265; */
-  margin: 2rem;
-  background: #2c3e50;
+h2, h3 {
+  color: #222222;
+}
+
+button {
+  background-color: #4CAF50;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+
+
+/* Style the translated text */
+#translatedText {
+  background-color: gainsboro;
+  margin: 1rem 0;
+  color: #2c3e50;
+}
+
+#translatedText p {
+  font-size: 1rem;
+}
+
+
+/* Style the buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 .videos {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.videos span {
+  display: block;
+  text-align: center;
+}
+
+.videos h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.videos video {
+  width: 40vh;
+  max-width: 300px;
+  height: auto;
+}
+
+#translatedText {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#translatedText p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .videos {
+    flex-direction: column;
+  }
+  
+  .videos span {
+    margin-bottom: 20px;
+  }
+  
+  #remote {
+    margin-top: 20px;
+  }
+  
+  #remote span {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #remote video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #translatedText {
+    margin-top: 10px;
+  }
 }

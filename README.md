@@ -1,8 +1,12 @@
-# Video Chat with WebRTC and Firebase
+# [SIGNfy](https://signfy.vercel.app)
 
-Build a 1-to-1 video chat feature with WebRTC, Firestore, and JavaScript. 
+Introducing Signfy, the revolutionary Video Chat app that brings the deaf and hearing worlds together like never before. Signfy seamlessly integrates sign language translation technology into its platform, allowing for clear communication and understanding between users who communicate through sign language and those who do not. With its user-friendly interface and powerful translation capabilities, Signfy opens up a world of possibilities for the deaf and hard of hearing community
 
-Watch the [WebRTC Explanation on YouTube](https://youtu.be/WmR9IMUD_CY) and follow the full [WebRTC Firebase Tutorial](https://fireship.io/lessons/webrtc-firebase-video-chat) on Fireship.io. 
+The 1-to-1 video chat feature built with WebRTC, Firestore, and JavaScript.
+
+While the Sign Language Translaion is bulit using TFJS and Teachable Machine.
+
+## [Live Demo](https://signfy.vercel.app)
 
 
 ## Usage

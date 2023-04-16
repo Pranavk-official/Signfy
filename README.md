@@ -8,6 +8,11 @@ While the Sign Language Translaion is bulit using TFJS and Teachable Machine.
 
 ## [Live Demo](https://signfy.vercel.app)
 
+---
+## Features :
+
+- [x] 1-to-1 Video Chat
+- [x] Real-Time Sign Language Translation
 
 ## Usage
 

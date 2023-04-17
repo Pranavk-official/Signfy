@@ -6,23 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   /* color: #2c3e50; */
-  margin: 80px 10px;
+  /* margin: 80px 10px; */
   background-color: #f2f2f2;
   color: #444444;
 }
-
-h2, h3 {
-  color: #222222;
-}
-
-button {
-  background-color: #4CAF50;
-}
-
-button:disabled {
-  background-color: #cccccc;
-}
-
 
 
 /* Style the translated text */
@@ -37,27 +24,11 @@ button:disabled {
 }
 
 
-/* Style the buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  margin: 0 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: default;
-}
-
 .videos {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .videos span {
@@ -75,6 +46,7 @@ button:disabled {
   width: 40vh;
   max-width: 300px;
   height: auto;
+  background-color: #444444;
 }
 
 #translatedText {

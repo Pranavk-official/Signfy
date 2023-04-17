@@ -3,48 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Video Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
-  <body>
-    <h2>1. Start your Webcam</h2>
-    <div class="videos">
-      <span>
-        <h3>Local Stream</h3>
-        <video id="webcamVideo" autoplay playsinline></video>
-      </span>
-      <div id="remote">
-        <span>
-          <h3>Remote Stream</h3>
-          <video id="remoteVideo" autoplay playsinline></video>
-        </span>
-        <div id="translatedText">
-          <p>Translated Text</p>
+  <body class="h-100 text-center text-bg-dark">
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SIGNfy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
+    </header>
 
-    </div>
-
-
-
-    <button id="webcamButton">Start webcam</button>
-    <h2>2. Create a new Call</h2>
-    <button id="callButton" disabled>Create Call (offer)</button>
-
-    <h2>3. Join a Call</h2>
-    <p>Answer the call from a different browser window or device</p>
+    <main class="px-3">
+      <div>
+        <!-- <h2>1. Start your Webcam</h2> -->
+        <div class="videos">
+          <span>
+            <h3>Local Stream</h3>
+            <video id="webcamVideo" autoplay playsinline></video>
+          </span>
+          <div id="remote">
+            <span>
+              <h3>Remote Stream</h3>
+              <video id="remoteVideo" autoplay playsinline></video>
+            </span>
+            <div id="translatedText">
+              <p>Translated Text</p>
+            </div>
+          </div>
     
-    <input id="callInput" />
-    <button id="answerButton" disabled>Answer</button>
-
-    <h2>4. Hangup</h2>
-
-    <button id="hangupButton" disabled>Hangup</button>
-
+      </div>
+      </div>
+      <div id="chatOption">
+        <button id="webcamButton" class="btn btn-outline-primary">Start webcam</button>
+        <!-- <h2>2. Create a new Call</h2> -->
+        <button id="callButton" class="btn btn-outline-success" disabled>Create Call (offer)</button>
+    
+        <!-- <h2>3. Join a Call</h2> -->
+        <br>
+        <p>Answer the call from a different browser window or device</p>
+        
+        <input id="callInput" />
+        <button id="answerButton" class="btn btn-outline-success" disabled>Answer</button>
+    
+        <!-- <h2>4. Hangup</h2> -->
+    
+        <button id="hangupButton" class="btn btn-outline-danger" disabled>Hangup</button>
+        
+      </div>
+    </main>
+  
     <script type="module" src="/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <!-- <script type="module" src="/object.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>

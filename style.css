@@ -11,6 +11,23 @@ body {
   color: #444444;
 }
 
+main {
+  height: 85vh;
+}
+
+footer {
+  background-color: #2f3841;
+}
+
+#chatOption {
+  padding-top: 80px;
+}
+
+#chatOption p {
+  padding-top: 20px;
+}
+
+
 
 /* Style the translated text */
 #translatedText {

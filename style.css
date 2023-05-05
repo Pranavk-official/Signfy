@@ -17,16 +17,16 @@ main {
 
 footer {
   background-color: #2f3841;
+  position: fixed;
 }
 
 #chatOption {
-  padding-top: 80px;
+  padding-top: 5  0px;
 }
 
 #chatOption p {
   padding-top: 20px;
 }
-
 
 
 /* Style the translated text */

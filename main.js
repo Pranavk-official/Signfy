@@ -197,7 +197,7 @@ async function loadModel() {
         // const labelIndex = tf.argMax(output, { axis: 1 }).dataSync()[0];
         const labelIndex = tf.argMax(output, 1).dataSync()[0];
         const label = metadata.labels[labelIndex];
-        console.log(label);
+        console.log(label); 
 
         let translatedText = document.getElementById('translatedText').innerHTML = label;
 

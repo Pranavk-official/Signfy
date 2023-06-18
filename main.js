@@ -158,7 +158,8 @@ answerButton.onclick = async () => {
 import * as tf from '@tensorflow/tfjs';
 
 // Load the Teachable Machine model
-const URL = "https://teachablemachine.withgoogle.com/models/cqbb-nRkh/";
+const URL = "https://teachablemachine.withgoogle.com/models/AA7CGSTNt/";
+// const URL = "https://teachablemachine.withgoogle.com/models/cqbb-nRkh/";
 const modelUrl = URL + "model.json";
 const metadataURL = URL + "metadata.json";
 

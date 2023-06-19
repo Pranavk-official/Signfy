@@ -15,13 +15,13 @@ main {
   height: 85vh;
 }
 
-footer {
+/* footer {
   background-color: #2f3841;
   position: fixed;
-}
+} */
 
 #chatOption {
-  padding-top: 5  0px;
+  padding-top: 5 0px;
 }
 
 #chatOption p {
@@ -84,28 +84,101 @@ footer {
   .videos {
     flex-direction: column;
   }
-  
+
   .videos span {
     margin-bottom: 20px;
   }
-  
+
   #remote {
     margin-top: 20px;
   }
-  
+
   #remote span {
     display: block;
     text-align: center;
     margin-bottom: 10px;
   }
-  
+
   #remote video {
     width: 100%;
     max-width: 100%;
     height: auto;
   }
-  
+
   #translatedText {
     margin-top: 10px;
   }
+}
+
+
+.profile-card {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+  transform: scale(1.1, 1.1) translateX(0);
+  transition: all 0.50s ease 0s;
+}
+
+.profile-card:hover img {
+  transform: scale(1.1, 1.1) translateX(15px);
+}
+
+.profile-card .profile-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: #333;
+  padding: 20px;
+  text-align: right;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0.9, 0.9) translateY(100%);
+  transition: all 0.40s linear 0s;
+}
+
+.profile-card:hover .profile-content {
+  transform: scale(0.9, 0.9) translateY(0);
+}
+
+.profile-card .profile-content h3 {
+  margin: 0 0 10px;
+  font-size: 25px;
+}
+
+.profile-card .profile-content p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.profile-card .profile-content ul {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.profile-card .profile-content ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 7px;
+}
+
+.profile-card .profile-content ul li a {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.50s linear 0s;
+}
+
+.profile-card .profile-content ul li a:hover {
+  text-decoration: none;
+  color: #808080;
 }
